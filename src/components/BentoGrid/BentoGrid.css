@@ -1,0 +1,66 @@
+/* Bento Grid */
+.bento-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr; /* Adjusts columns for different widths */
+    grid-template-rows: 1fr 2fr; /* First row shorter, second row taller */
+    gap: 20px;
+    padding: 20px;
+    background-color: #0e1b3a;
+    color: #ffffff;
+}
+
+/* First Row Items */
+.bento-item {
+    background-color: #1a2b4f;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Custom Styling for Large Item */
+.bento-item.large {
+    /* background-image: url(../../../public/photo-1496765981355-7b4cbdbf7b96.avif); */
+    background: url(../../../public/photo-1496765981355-7b4cbdbf7b96.avif);
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* grid-column: span 2; */
+    display: flex;
+    /* justify-content: start; */
+    /* padding-top: 40px; */
+    flex-direction: column;
+    align-items: center;
+    /* grid-row: span 2; Occupy two rows */
+}
+
+/* 60%, 20%, 40% layout in the second row */
+.bento-grid > :nth-child(5) { /* First item in the second row (60% width) */
+    grid-column: span 2;
+}
+
+.bento-grid > :nth-child(6) { /* Second item in the second row (20% width) */
+    grid-column: span 1;
+}
+
+.bento-grid > :nth-child(7) { /* Third item in the second row (40% width) */
+    grid-column: span 1;
+}
+
+/* Text Styling */
+.bento-item h3 {
+    margin: 0;
+    font-size: 2.2rem;
+    justify-items: center;
+}
+
+.bento-item p {
+    margin: 10px 0;
+}
+
+.bento-item img {
+    width: 50%;
+    border-radius: 30px;
+}

@@ -1,0 +1,44 @@
+.bento-item {
+    background-color: #1a2b4f;
+    border-radius: 10px;
+    padding: 20px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bento-item h4 {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #8a9bb6;
+  }
+  
+  .amount {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .change {
+    font-size: 1em;
+    color: #28a745;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background-color: #1a2b4f;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+    position: relative;
+  }
+  
+  .progress-bar span {
+    display: block;
+    height: 10px;
+    background-color: #4caf50;
+  }
+  .image{
+    display: flex;
+    flex-direction: column;
+  }
